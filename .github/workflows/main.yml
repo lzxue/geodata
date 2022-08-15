@@ -25,8 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
       # Runs a set of commands using the runners shell
-      - name: DownLoad Data 01 
+     - name: DownLoad Data 01 
         run: |
           wget -i filghturl.txt -P flight/
           git config --local user.name lzxue
@@ -45,6 +49,7 @@ jobs:
         git commit -m 'download data'
         git push
         echo downloaded.
+        
       - name: DownLoad Data 03
           run: |
             wget -i filghturl02.txt -P flight/
