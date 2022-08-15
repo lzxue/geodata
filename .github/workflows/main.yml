@@ -31,32 +31,32 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: DownLoad Data 01 
-          run: |
-            wget -i filghturl.txt -P flight/
-            git config --local user.name lzxue
-            git config --local user.email lzx199065@gmail.com
-            git add .
-            git commit -m 'download data'
-            git push
-            echo downloaded1.
-            wget -i filghturl01.txt -P flight/
-            git config --local user.name lzxue
-            git config --local user.email lzx199065@gmail.com
-            git add .
-            git commit -m 'download data'
-            git push
-            echo downloaded2.
-            wget -i filghturl02.txt -P flight/
-            git config --local user.name lzxue
-            git config --local user.email lzx199065@gmail.com
-            git add .
-            git commit -m 'download data'
-            git push
-            echo downloaded3.
-            wget -i filghturl03.txt -P flight/
-            git config --local user.name lzxue
-            git config --local user.email lzx199065@gmail.com
-            git add .
-            git commit -m 'download data'
-            git push
-            echo downloaded4.
+        run: |
+          wget -i filghturl.txt -P flight/
+          git config --local user.name lzxue
+          git config --local user.email lzx199065@gmail.com
+          git add .
+          git commit -m 'download data'
+          git push
+          echo downloaded1.
+          wget -i filghturl01.txt -P flight/
+          git config --local user.name lzxue
+          git config --local user.email lzx199065@gmail.com
+          git add .
+          git commit -m 'download data'
+          git push
+          echo downloaded2.
+          wget -i filghturl02.txt -P flight/
+          git config --local user.name lzxue
+          git config --local user.email lzx199065@gmail.com
+          git add .
+          git commit -m 'download data'
+          git push
+          echo downloaded3.
+          wget -i filghturl03.txt -P flight/
+          git config --local user.name lzxue
+          git config --local user.email lzx199065@gmail.com
+          git add .
+          git commit -m 'download data'
+          git push
+          echo downloaded4.
