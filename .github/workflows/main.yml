@@ -35,6 +35,7 @@ jobs:
           git commit -m 'download data'
           git push
           echo downloaded.
+
       - name: DownLoad Data 02
       run: |
         wget -i filghturl01.txt -P flight/
@@ -53,6 +54,7 @@ jobs:
             git commit -m 'download data'
             git push
             echo downloaded.
+            
       - name: DownLoad Data 03
         run: |
           wget -i filghturl03.txt -P flight/
