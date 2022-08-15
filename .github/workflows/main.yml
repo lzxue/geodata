@@ -30,9 +30,19 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-     - name: DownLoad Data 01 
+      - name: DownLoad Data 01 
+          run: |
+            wget -i filghturl.txt -P flight/
+            git config --local user.name lzxue
+            git config --local user.email lzx199065@gmail.com
+            git add .
+            git commit -m 'download data'
+            git push
+            echo downloaded.
+
+      - name: DownLoad Data 02
         run: |
-          wget -i filghturl.txt -P flight/
+          wget -i filghturl01.txt -P flight/
           git config --local user.name lzxue
           git config --local user.email lzx199065@gmail.com
           git add .
@@ -40,16 +50,6 @@ jobs:
           git push
           echo downloaded.
 
-      - name: DownLoad Data 02
-      run: |
-        wget -i filghturl01.txt -P flight/
-        git config --local user.name lzxue
-        git config --local user.email lzx199065@gmail.com
-        git add .
-        git commit -m 'download data'
-        git push
-        echo downloaded.
-        
       - name: DownLoad Data 03
           run: |
             wget -i filghturl02.txt -P flight/
@@ -60,7 +60,7 @@ jobs:
             git push
             echo downloaded.
             
-      - name: DownLoad Data 03
+      - name: DownLoad Data 04
         run: |
           wget -i filghturl03.txt -P flight/
           git config --local user.name lzxue
